@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "openRunde";
+  src: url("/fonts/648293620770408b-s.p.woff2") format("woff2");
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "openRunde";
+  src: url("/fonts/49fce7c6966c54d3-s.p.woff2") format("woff2");
+  font-display: swap;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "openRunde";
+  src: url("/fonts/1bb87caddaaf6c2d-s.p.woff2") format("woff2");
+  font-display: swap;
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "openRunde";
+  src: url("/fonts/5bd95970c700f5bd-s.p.woff2") format("woff2");
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@theme inline {
+  --font-sans: "openRunde", ui-sans-serif, system-ui, sans-serif;
+
+  --color-background: oklch(100% 0.0017 67.8);
+  --color-foreground: oklch(20% 0.015 255);
+  --color-card: oklch(97.5% 0.0017 67.8);
+  --color-card-foreground: oklch(20% 0.015 255);
+  --color-primary: oklch(52% 0.17 255);
+  --color-primary-foreground: oklch(100% 0 0);
+  --color-secondary: oklch(96% 0.0017 67.8);
+  --color-secondary-foreground: oklch(20% 0.015 255);
+  --color-muted: oklch(95% 0.0017 67.8);
+  --color-muted-foreground: oklch(51.03% 0 0);
+  --color-border: oklch(93.7% 0 0);
+  --radius: 0.8em;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+}
