@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { Logo } from "@/components/logo";
 
 export function PageShell({
   title,
@@ -11,12 +11,7 @@ export function PageShell({
     <div className="bg-background flex-1">
       <main className="flex-1 py-20 sm:py-24">
         <div className="mx-auto max-w-2xl px-4 sm:px-8 lg:px-12">
-          <Link
-            href="/"
-            className="text-muted-foreground hover:text-foreground mb-8 inline-block text-sm transition-colors"
-          >
-            ← lottaprojects
-          </Link>
+          <Logo className="mb-8" />
           <h1 className="text-foreground mb-8 text-3xl font-semibold tracking-tight sm:text-4xl">
             {title}
           </h1>

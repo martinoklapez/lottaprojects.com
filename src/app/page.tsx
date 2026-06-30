@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { LocationBadge } from "@/components/location-badge";
+import { Logo } from "@/components/logo";
 import { UserMilestone } from "@/components/user-milestone";
 
 export default function Home() {
@@ -10,6 +11,8 @@ export default function Home() {
         <section className="relative overflow-hidden pt-20 pb-20 sm:pt-24 sm:pb-24">
           <div className="mx-auto max-w-5xl px-4 sm:px-8 lg:px-12">
             <div className="flex flex-col items-center text-center">
+              <Logo className="mb-10" />
+
               <h1 className="max-w-4xl text-3xl leading-tight font-semibold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl">
                 <span className="text-foreground">
                   We Build Products People Actually Use.
